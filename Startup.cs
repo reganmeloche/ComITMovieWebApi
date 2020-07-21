@@ -29,6 +29,7 @@ namespace MovieWebApi
 
             var movieList = new List<Movie>();
             var movie1 = new Movie();
+            movie1.Id = Guid.NewGuid();
             movie1.Title = "Jurassic Park";
             movie1.Director = "Steven Spielberg";
             movie1.Year = 1993;
@@ -46,6 +47,8 @@ namespace MovieWebApi
             }
 
             app.UseHttpsRedirection();
+
+            app.UseStaticFiles();
 
             app.UseRouting();
 
