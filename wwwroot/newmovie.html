@@ -2,21 +2,52 @@
 <html>
     <head>
         <title>New Movie</title>
+        <link rel="stylesheet" href="mystyle.css"/>
     </head>
 
     <body>
         <h1>Movie Application</h1>
         <br/>
-        <h3>New Movie</h3>
+        <h3 class="page-title">New Movie</h3>
         <p>This is a page that will create a new movie</p>
-        <!--Form goes here-->
-        <button>Create new Movie</button>
-        <br/>
-        <br/>
-        <a href="allmovies.html">All Movies</a>
+        
+        <div id="movie-form-holder">
+            <form>
+                <label for="movie-title">Title: </label>
+                <input name="movie-title" type="text"/>
+                <br/><br/>
+    
+                <label for="movie-director">Director: </label>
+                <input name="movie-director" type="text"/>
+                <br/><br/>
+    
+                <label for="movie-year">Year: </label>
+                <input name="movie-year" type="number"/>
+                <br/><br/>
+    
+                <button type="submit">Create new Movie</button>
+            </form>
+        </div>
+
+
+        <div class="nav-container">
+            <a href="allmovies.html">All Movies</a>
+        </div>
 
         <hr/>
         <p>Copyright 2020</p>
 
     </body>
 </html>
+
+<style>
+form {
+    width:40%;
+    background-color: lightyellow;
+}
+
+#movie-form-holder {
+    text-align: center;
+}
+
+</style>
