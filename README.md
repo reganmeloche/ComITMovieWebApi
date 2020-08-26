@@ -1,9 +1,22 @@
-Steps to re-create:
-- Command: dotnet new webapi
-- Copy the WeatherForecastController and rename it to MovieController
-- Rename all the references in it from WeatherForecastController to MovieController
-- Remove some of the unnecessary code (logger, static member, ...)
-- Build out the endpoints in the MovieController (GET, POST, PUT, DELETE)
-- Create the Movie class in a new file
-- Inject a List<Movie> into the controller from the Startup class (services.AddSingleton())
-- Read and write from this movieList when doing your GETs and POSTs
+## Movie Web API Project
+
+This is a demo of a Web API project for the Movie ratings. It is a very basic CRUD application for managing movies. It demonstrates the following concepts:
+
+Front-end:
+- Traditional front-end technologies: HTML, CSS, JS
+- More advanced front-end technologies: Bootstrap, JQuery
+- Static and dynamic web development
+
+Back-end:
+- Middleware
+- Controllers
+- HTTP Request handling
+- Simple Dependency Injection
+
+What is NOT in this project:
+- .NET MVC
+- Validation and complex logic
+- Persistent Databases
+
+
+
